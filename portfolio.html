@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="portfolio.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Strait&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#form">Form</a></li>
+        <li><a href="#caption">Table</a></li>
+        <li><a href="#gallery">CSS grid - gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <!-- Form -->
+      <div class="form" id="form"> <form>
+        <h2 id="form">Gym membership form</h2>
+        <image class="gym" src="images/gym.jpg" rel="people training in the gym"> 
+        <!-- Контейнер за имената -->
+        <div class="container-name"><label class="name" for="name">First name </label>
+          <input id="name" type="text" placeholder="Viktor" required></input></div>
+        <div class="container-surname "><label class="surname"for="surname">Surname</label>
+          <input id="surname" type="text" placeholder="Dilov" required></input></div>
+        
+        <fieldset>
+        <legend class="gender-legend ">Gender </legend>
+        <!-- Контейнър за пола -->
+         <div class="gender-container">
+          <div class="male"><label class="ml" for="male">Male<label>
+          <input id="male" name="gender" type="radio" ></input></div> 
+          <div class="female"> <label class="wn" for="female">Female</label>
+          <input id="female" name="gender" type="radio" ></input></div></div>
+        </fieldset>
+  
+        <!-- Контейнър за пола -->
+        <div class="birth-container"><label class="birth-date" for="birth-date">Birth day </label>
+          <input id="birth-date" type="text" placeholder="MM/DD/YYYY"  onfocus="(this.type='date')"></input></div>
+        
+        <!-- Контейнър за майл -->
+        <div class="email-container"><label class="email" for="email">Email </label>
+        <input id="email" type="email" placeholder="sir.jones@gmail.com" required></input></div>
+        
+        <!-- Контейнър за телефон -->
+        <div class="phone-container"><label class="phone" for="number">Phone number<br/><small>Format: 359-888-777-123</small> </label>
+          <input id="number" type="tel" required></input></div>
+        
+        <button>Submit</button>
+      </form></div>
+     
+        <!-- Table -->
+      <div class="table">
+        
+       <div class="table-wrapper">
+        <table>
+          <!-- <h2 id="table">Ден от тренировъчна програма</h2> -->
+          <caption id="caption" class="caption" >Ден от тренировъчна програма</caption>
+            <!-- Може да добавя календар някъде -->
+            
+            <thead>
+              <th id="exercise">Упражнение</th>
+                <th id="weight">Тежест</th>
+                <th id="reps">Повторения</th>
+                <th id="sets">Серии</th>
+                <th id="note">Бележка</th>
+              
+            </thead>
+            
+            <tbody>
+              <!-- TR си е контейнер, виж как може да се използва -->
+              <tr>
+                <td class="exercise"><img src="images/trap.webp" alt="trap bar deadlift"> Трап-бар тяга </td>
+                <!--  Упражнение -->
+                <td  data-cell ="тежест"class="weight">100 кг</td>
+      
+                <td class="reps">10</td>
+                <td class="sets">3</td>
+                <td class="note">Обери луфта на щангата</td>
+              </tr>
+              <tr>
+                <td class="exercise"><img src="images/incline.jpg" alt="incline close grip bench press">Горна лежанка</td>
+                <td class="weight">55 кг</td>
+                <td class="reps">6</td>
+                <td class="sets">3</td>
+                <td class="note">Хвата на широчината на раменете</td>
+              </tr>
+              <tr class="lat">
+                <td class="exercise"><img src="images/pulldown.jpg" alt="lat-pulldown">Пулдаун с една ръка</a></td>
+                <td class="weight">40 кг</td>
+                <td class="reps">15</td>
+                <td class="sets">3</td>
+                <td class="note">
+                  Натисни рамото надолу от ухото и дръж ръката възможно най-близо до
+                  торса
+                </td>
+              </tr>
+              <tr>
+                <td class="exercise"><img src="images/raises.png" rel="leg raises">Повдигане на краката</td>
+                <td class="weight">Собствено тегло</td>
+                <td class="reps">10</td>
+                <td class="sets">3</td>
+                <td class="note">Завърти опашката под теб при вдигането</td>
+              </tr>
+              <tr>
+                <td class="exercise"><img src="images/flexion.jpg" rel="oblique flexion">Странични сгъвания <br> на хиперекстензия</td>
+                <td class="weight">5 кг</td>
+                <td class="reps">12</td>
+                <td class="sets">3</td>
+                <td class="note">Натискай с таза при вдигането</td>
+              </tr>
+            </tbody>
+        </table>
+     </div>
+    </div>  
+    
+     <!-- Masonry gallery -->
+     <div class="gallery">
+      <h2 id="gallery">Masonry gallery</h2>
+      <div class="flexbox">
+       <div class="grid-container">
+        <div class="image-1 image">
+          <img class="audi" src="images/image1.jpg" rel="audi drivers view" />
+        </div>
+        <div class="image-2 image">
+          <!-- <h4>sdasdsa</h4> -->
+          <img class="party" src="images/image2.jpg" rel="DJ party in Ibiza" />
+        </div>
+        <div class="image-3 image">
+          <img class="romania" src="images/image3.jpg" rel="Oldtown Bucharest" />
+        </div>
+        <div class="image-4 image">
+          <img src="images/image4.webp" rel="kitesurf" />
+        </div>
+        <div class="image-5 image">
+          <img class="sofia" src="images/image5.jpg" rel="Sofia center" />
+        </div>
+        <div class="image-6 image">
+          <img class="prague" src="images/image6.webp" rel="Prague" />
+        </div>
+        <div class="image-7 image">
+          <img class="motorcycle" src="images/image7.webp" alt="motorcycle" />
+        </div>
+        <div class="image-8 image">
+          <img class="varna" src="images/image8.jpg" rel="Varna" />
+        </div>
+        <div class="image-9 image">
+          <img class="deadlift" src="images/image9.webp" rel="deadflit" />
+        </div>
+      </div>
+     </div>
+    </div>    
+    
+    </main>
+  </body>
+</html>
