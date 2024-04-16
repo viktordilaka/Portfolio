@@ -421,3 +421,19 @@ tr {
   grid-row: 4 / 5;
   border: solid 2px blue;
 }
+
+/* Add text to the center of img */
+.image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  position: absolute;
+  z-index: 1;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  text-shadow: 3px -1px 1px #ff0000;
+}
